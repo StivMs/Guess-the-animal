@@ -1,24 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a20-k7-ufb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="Xhq-eh-f73">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="YRM-Wz-yaw" customClass="ViewController" customModule="GuessXAnimal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ujb-4a-Sks">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knt-vw-j0m">
+                                <rect key="frame" x="173.5" y="152" width="67.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the animal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-8z-qK5">
+                                <rect key="frame" x="108.5" y="109" width="197" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emO-zD-gEH">
+                                <rect key="frame" x="123" y="218" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="monkey"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="YRM-Wz-yaw" eventType="touchUpInside" id="kJ2-0R-aom"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aj-3S-bnQ">
+                                <rect key="frame" x="123" y="378" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bee"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="YRM-Wz-yaw" eventType="touchUpInside" id="e9h-UK-QOc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbY-em-Mc4">
+                                <rect key="frame" x="123" y="538" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bug"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="YRM-Wz-yaw" eventType="touchUpInside" id="rdb-QX-xny"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89156514406204224" green="0.96979361772537231" blue="0.90277844667434692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7KH-8z-qK5" firstAttribute="centerX" secondItem="Y9O-iK-tcp" secondAttribute="centerX" id="80q-GB-ks0"/>
+                            <constraint firstItem="Knt-vw-j0m" firstAttribute="centerX" secondItem="7KH-8z-qK5" secondAttribute="centerX" id="gTI-IF-ngZ"/>
+                            <constraint firstItem="7KH-8z-qK5" firstAttribute="top" secondItem="Y9O-iK-tcp" secondAttribute="top" constant="21" id="jJq-Fa-67d"/>
+                            <constraint firstItem="Knt-vw-j0m" firstAttribute="top" secondItem="7KH-8z-qK5" secondAttribute="bottom" constant="8" id="nBP-f1-z7y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y9O-iK-tcp"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AZr-af-7sA"/>
+                    <connections>
+                        <outlet property="QuestionLabel" destination="Knt-vw-j0m" id="jGA-HE-hOg"/>
+                        <outlet property="button1" destination="emO-zD-gEH" id="HiY-OZ-hMf"/>
+                        <outlet property="button2" destination="5aj-3S-bnQ" id="Wzh-dU-fNY"/>
+                        <outlet property="button3" destination="QbY-em-Mc4" id="jMH-eg-I32"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5A-b5-MFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2115.9420289855075" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y5x-GA-xsW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a20-k7-ufb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Skz-dk-A4C">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YRM-Wz-yaw" kind="relationship" relationship="rootViewController" id="IbR-aA-JCM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nn8-Zg-89S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.7971014492755" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bee" width="47" height="47"/>
+        <image name="bug" width="47" height="47"/>
+        <image name="monkey" width="47" height="47"/>
+    </resources>
 </document>

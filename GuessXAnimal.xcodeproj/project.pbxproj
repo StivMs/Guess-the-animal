@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C055A4AB242A101C00D1FA15 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = C055A4AA242A101C00D1FA15 /* Images */; };
 		C0CC79292427ED34004EC43C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC79282427ED34004EC43C /* AppDelegate.swift */; };
 		C0CC792B2427ED34004EC43C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC792A2427ED34004EC43C /* SceneDelegate.swift */; };
 		C0CC792D2427ED34004EC43C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CC792C2427ED34004EC43C /* ViewController.swift */; };
-		C0CC79302427ED34004EC43C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CC792E2427ED34004EC43C /* Main.storyboard */; };
 		C0CC79322427ED36004EC43C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0CC79312427ED36004EC43C /* Assets.xcassets */; };
 		C0CC79352427ED36004EC43C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CC79332427ED36004EC43C /* LaunchScreen.storyboard */; };
+		C0CC794724296D4E004EC43C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CC792E2427ED34004EC43C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C0CC79252427ED34004EC43C /* GuessXAnimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessXAnimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C055A4AA242A101C00D1FA15 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		C0CC79252427ED34004EC43C /* Guess the animal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess the animal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CC79282427ED34004EC43C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CC792A2427ED34004EC43C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C0CC792C2427ED34004EC43C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		C0CC79262427ED34004EC43C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0CC79252427ED34004EC43C /* GuessXAnimal.app */,
+				C0CC79252427ED34004EC43C /* Guess the animal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +65,7 @@
 				C0CC79312427ED36004EC43C /* Assets.xcassets */,
 				C0CC79332427ED36004EC43C /* LaunchScreen.storyboard */,
 				C0CC79362427ED36004EC43C /* Info.plist */,
+				C055A4AA242A101C00D1FA15 /* Images */,
 			);
 			path = GuessXAnimal;
 			sourceTree = "<group>";
@@ -84,7 +87,7 @@
 			);
 			name = GuessXAnimal;
 			productName = GuessXAnimal;
-			productReference = C0CC79252427ED34004EC43C /* GuessXAnimal.app */;
+			productReference = C0CC79252427ED34004EC43C /* Guess the animal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,9 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C055A4AB242A101C00D1FA15 /* Images in Resources */,
 				C0CC79352427ED36004EC43C /* LaunchScreen.storyboard in Resources */,
 				C0CC79322427ED36004EC43C /* Assets.xcassets in Resources */,
-				C0CC79302427ED34004EC43C /* Main.storyboard in Resources */,
+				C0CC794724296D4E004EC43C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = StivanHQ.GuessXAnimal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Guess the animal";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = StivanHQ.GuessXAnimal;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Guess the animal";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

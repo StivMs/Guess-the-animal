@@ -26,7 +26,8 @@ A Swift project made with UIKit. A simple Guess the animal game.
 ## Knowledge
 
 A few things I've learned during this project:
-
+* Handling images and matching with names from the array (change button image to an animal)
+* Handling button tap and using "Tags" to identify each button in the StoryBoard.
 
 
 ## Acknowledgments

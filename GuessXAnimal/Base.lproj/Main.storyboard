@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="Xhq-eh-f73">
             <objects>
-                <viewController id="YRM-Wz-yaw" customClass="ViewController" customModule="GuessXAnimal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="YRM-Wz-yaw" customClass="ViewController" customModule="Guess_the_animal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ujb-4a-Sks">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,25 +27,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emO-zD-gEH">
-                                <rect key="frame" x="123" y="218" width="140" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="monkey"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emO-zD-gEH">
+                                <rect key="frame" x="137" y="218" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="0ea-q2-b1p"/>
+                                    <constraint firstAttribute="width" constant="140" id="GtV-6f-BaU"/>
+                                </constraints>
+                                <state key="normal" image="bear"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="YRM-Wz-yaw" eventType="touchUpInside" id="kJ2-0R-aom"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aj-3S-bnQ">
-                                <rect key="frame" x="123" y="378" width="140" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aj-3S-bnQ">
+                                <rect key="frame" x="137" y="378" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Dzu-Fd-6u7"/>
+                                    <constraint firstAttribute="height" constant="140" id="rjT-gi-GvF"/>
+                                </constraints>
                                 <state key="normal" image="bee"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="YRM-Wz-yaw" eventType="touchUpInside" id="e9h-UK-QOc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbY-em-Mc4">
-                                <rect key="frame" x="123" y="538" width="140" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbY-em-Mc4">
+                                <rect key="frame" x="137" y="538" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="OTd-px-zdp"/>
+                                    <constraint firstAttribute="width" constant="140" id="cD5-8v-cc3"/>
+                                </constraints>
                                 <state key="normal" image="bug"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="YRM-Wz-yaw" eventType="touchUpInside" id="rdb-QX-xny"/>
@@ -54,10 +63,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.89156514406204224" green="0.96979361772537231" blue="0.90277844667434692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="QbY-em-Mc4" firstAttribute="centerX" secondItem="5aj-3S-bnQ" secondAttribute="centerX" id="0mD-xL-iSh"/>
+                            <constraint firstItem="5aj-3S-bnQ" firstAttribute="top" secondItem="emO-zD-gEH" secondAttribute="bottom" constant="20" id="54x-x4-Q3C"/>
                             <constraint firstItem="7KH-8z-qK5" firstAttribute="centerX" secondItem="Y9O-iK-tcp" secondAttribute="centerX" id="80q-GB-ks0"/>
+                            <constraint firstItem="5aj-3S-bnQ" firstAttribute="centerX" secondItem="emO-zD-gEH" secondAttribute="centerX" id="8HN-R6-HcP"/>
+                            <constraint firstItem="emO-zD-gEH" firstAttribute="top" secondItem="Y9O-iK-tcp" secondAttribute="top" constant="130" id="bmJ-5P-LgB"/>
                             <constraint firstItem="Knt-vw-j0m" firstAttribute="centerX" secondItem="7KH-8z-qK5" secondAttribute="centerX" id="gTI-IF-ngZ"/>
                             <constraint firstItem="7KH-8z-qK5" firstAttribute="top" secondItem="Y9O-iK-tcp" secondAttribute="top" constant="21" id="jJq-Fa-67d"/>
                             <constraint firstItem="Knt-vw-j0m" firstAttribute="top" secondItem="7KH-8z-qK5" secondAttribute="bottom" constant="8" id="nBP-f1-z7y"/>
+                            <constraint firstItem="emO-zD-gEH" firstAttribute="centerX" secondItem="Y9O-iK-tcp" secondAttribute="centerX" id="oFV-TJ-Es2"/>
+                            <constraint firstItem="QbY-em-Mc4" firstAttribute="top" secondItem="5aj-3S-bnQ" secondAttribute="bottom" constant="20" id="yzh-zx-2eo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y9O-iK-tcp"/>
                     </view>
@@ -93,8 +108,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bear" width="47" height="47"/>
         <image name="bee" width="47" height="47"/>
         <image name="bug" width="47" height="47"/>
-        <image name="monkey" width="47" height="47"/>
     </resources>
 </document>
